@@ -1,72 +1,106 @@
-Démo ici : https://spacex-react-vers.vercel.app/
+# 🚀 SpaceX — React Web Application
 
-# Getting Started with Create React App
+## Présentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SpaceX est une application web développée avec React permettant d'explorer l'univers de l'exploration spatiale à travers différentes informations sur SpaceX, ses fusées, ses lancements et les astronautes.
 
-## Available Scripts
+Ce projet personnel a pour objectif de mettre en pratique le développement frontend, l'intégration d'API REST et la manipulation de données dynamiques.
 
-In the project directory, you can run:
+## Fonctionnalités
 
-### `npm start`
+- **Home** : présentation de SpaceX et statistiques sur les lancements.
+- **History** : historique des lancements SpaceX sous forme de timeline interactive.
+- **Crew** : exploration des astronautes, recherche par nom ou agence et fiches détaillées.
+- **Rockets** : présentation des fusées, de leurs configurations et de leurs caractéristiques techniques.
+- **Quiz** : section interactive dédiée aux connaissances sur l'univers spatial.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies utilisées
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- JavaScript
+- HTML5 / CSS3
+- Bootstrap
+- Axios
+- React Router
+- React Toastify
+- Launch Library 2 API
 
-### `npm test`
+## API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+L'application utilise l'API REST **Launch Library 2**, développée par The Space Devs.
 
-### `npm run build`
+Documentation : https://thespacedevs.com/llapi
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Les données sont récupérées dynamiquement, notamment pour les lancements, les astronautes et les configurations de fusées.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Un système de cache local est utilisé pour limiter les appels API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Limites :** l'API publique possède un quota de requêtes. L'environnement de développement fournit des données historiques qui peuvent être incomplètes ou anciennes.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prérequis
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- npm
+- Git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Cloner le dépôt
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/Carneiro-David/SpaceX.git
+```
 
-## Learn More
+### Accéder au projet
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd SpaceX
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installer les dépendances
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Démarrer l'application
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+L'application sera accessible à l'adresse :
 
-### Making a Progressive Web App
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Structure du projet
 
-### Advanced Configuration
+```text
+src/
+├── assets/
+│   ├── img/
+│   └── style/
+├── components/
+│   ├── data/
+│   ├── layout/
+│   ├── pages/
+│   └── routes/
+├── services/
+│   └── api.js
+├── App.js
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Améliorations envisagées
 
-### Deployment
+- Amélioration du responsive design.
+- Optimisation des appels API et du cache.
+- Enrichissement des fiches techniques des fusées.
+- Amélioration des filtres et de la recherche.
+- Ajout de nouvelles statistiques sur les missions spatiales.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Auteur
 
-### `npm run build` fails to minify
+Projet académiques développé mon groupe d'élève.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub : https://github.com/Carneiro-David
