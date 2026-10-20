@@ -1,0 +1,46 @@
+/* Cartes des fusées */
+.rocket-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenu de la carte */
+.rocket-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Bouton aligné en bas */
+.rocket-card .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.rockets-page {
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Cartes des fusées */
+.rockets-page .rocket-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenu des cartes */
+.rockets-page .rocket-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Boutons alignés en bas */
+.rockets-page .rocket-card .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}

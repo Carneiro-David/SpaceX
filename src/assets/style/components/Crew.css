@@ -1,0 +1,18 @@
+.crew-page {
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Texte de la page */
+.crew-page h1,
+.crew-page h2,
+.crew-page p {
+    color: white;
+}
+
+/* Conserver les cartes avec leurs styles existants */
+.crew-page .card {
+    color: #1f1f1f;
+}
